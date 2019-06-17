@@ -1,0 +1,1569 @@
+!SESSION 2016-11-17 09:45:09.010 -----------------------------------------------
+eclipse.buildId=4.5.2.M20160212-1500
+java.version=1.8.0_40
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-11-17 09:45:46.589
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Abraham'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2019-06-16 19:48:21.437 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_131
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2019-06-16 19:49:31.201
+!MESSAGE Unable to load class 'org.eclipse.ui.internal.ide.application.addons.ModelCleanupAddon' from bundle '353'
+!STACK 0
+java.lang.ClassNotFoundException: org.eclipse.ui.internal.ide.application.addons.ModelCleanupAddon cannot be found by org.eclipse.ui.ide.application_1.0.501.v20141111-1238
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:432)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:345)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:337)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:160)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:568)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:102)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:73)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:50)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application.createE4Workbench(E4Application.java:294)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:601)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.jface 4 0 2019-06-16 19:49:46.205
+!MESSAGE /icons/full/eview16/package.png
+!STACK 0
+java.io.FileNotFoundException: /icons/full/eview16/package.png
+	at org.eclipse.osgi.storage.url.bundleentry.Handler.findBundleEntry(Handler.java:37)
+	at org.eclipse.osgi.storage.url.BundleResourceHandler.openConnection(BundleResourceHandler.java:169)
+	at java.net.URL.openConnection(Unknown Source)
+	at org.eclipse.core.internal.boot.PlatformURLConnection.connect(PlatformURLConnection.java:110)
+	at org.eclipse.core.internal.boot.PlatformURLConnection.getURLAsLocal(PlatformURLConnection.java:238)
+	at org.eclipse.core.internal.runtime.PlatformURLConverter.toFileURL(PlatformURLConverter.java:36)
+	at org.eclipse.core.runtime.FileLocator.toFileURL(FileLocator.java:206)
+	at org.eclipse.jface.resource.URLImageDescriptor.getFilePath(URLImageDescriptor.java:141)
+	at org.eclipse.jface.resource.URLImageDescriptor.createImage(URLImageDescriptor.java:162)
+	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:230)
+	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:208)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.getImageFromURI(SWTPartRenderer.java:223)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.getImage(SWTPartRenderer.java:235)
+	at org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer.createTab(StackRenderer.java:825)
+	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer.processContents(LazyStackRenderer.java:139)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:674)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:766)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$2(PartRenderingEngine.java:737)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$7.run(PartRenderingEngine.java:731)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:715)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:69)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:185)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:674)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:766)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$2(PartRenderingEngine.java:737)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$7.run(PartRenderingEngine.java:731)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:715)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:69)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:185)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:674)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:766)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$2(PartRenderingEngine.java:737)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$7.run(PartRenderingEngine.java:731)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:715)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:69)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveRenderer.processContents(PerspectiveRenderer.java:49)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:674)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:766)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$2(PartRenderingEngine.java:737)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$7.run(PartRenderingEngine.java:731)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:715)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveStackRenderer.showTab(PerspectiveStackRenderer.java:103)
+	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer.postProcess(LazyStackRenderer.java:103)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveStackRenderer.postProcess(PerspectiveStackRenderer.java:77)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:678)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:766)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$2(PartRenderingEngine.java:737)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$7.run(PartRenderingEngine.java:731)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:715)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:69)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:185)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:674)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:766)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$2(PartRenderingEngine.java:737)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$7.run(PartRenderingEngine.java:731)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:715)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:69)
+	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer.processContents(WBWRenderer.java:663)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:674)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:766)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$2(PartRenderingEngine.java:737)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$7.run(PartRenderingEngine.java:731)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:715)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1078)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.jface 4 0 2019-06-16 19:50:14.075
+!MESSAGE /icons/full/obj16/jcu_obj.png
+!STACK 0
+java.io.FileNotFoundException: /icons/full/obj16/jcu_obj.png
+	at org.eclipse.osgi.storage.url.bundleentry.Handler.findBundleEntry(Handler.java:37)
+	at org.eclipse.osgi.storage.url.BundleResourceHandler.openConnection(BundleResourceHandler.java:169)
+	at java.net.URL.openConnection(Unknown Source)
+	at org.eclipse.core.internal.boot.PlatformURLConnection.connect(PlatformURLConnection.java:110)
+	at org.eclipse.core.internal.boot.PlatformURLConnection.getURLAsLocal(PlatformURLConnection.java:238)
+	at org.eclipse.core.internal.runtime.PlatformURLConverter.toFileURL(PlatformURLConverter.java:36)
+	at org.eclipse.core.runtime.FileLocator.toFileURL(FileLocator.java:206)
+	at org.eclipse.jface.resource.URLImageDescriptor.getFilePath(URLImageDescriptor.java:141)
+	at org.eclipse.jface.resource.URLImageDescriptor.createImage(URLImageDescriptor.java:162)
+	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:230)
+	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:208)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.getImageFromURI(SWTPartRenderer.java:223)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.getImage(SWTPartRenderer.java:235)
+	at org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer.createTab(StackRenderer.java:825)
+	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer.processContents(LazyStackRenderer.java:139)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:674)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:766)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$2(PartRenderingEngine.java:737)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$7.run(PartRenderingEngine.java:731)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:715)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:69)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:674)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$6.run(PartRenderingEngine.java:547)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:531)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ElementReferenceRenderer.createWidget(ElementReferenceRenderer.java:69)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:983)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:662)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:766)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$2(PartRenderingEngine.java:737)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$7.run(PartRenderingEngine.java:731)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:715)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:69)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:185)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:674)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:766)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$2(PartRenderingEngine.java:737)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$7.run(PartRenderingEngine.java:731)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:715)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:69)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:185)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:674)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:766)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$2(PartRenderingEngine.java:737)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$7.run(PartRenderingEngine.java:731)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:715)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:69)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:185)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:674)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:766)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$2(PartRenderingEngine.java:737)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$7.run(PartRenderingEngine.java:731)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:715)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:69)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveRenderer.processContents(PerspectiveRenderer.java:49)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:674)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:766)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$2(PartRenderingEngine.java:737)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$7.run(PartRenderingEngine.java:731)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:715)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveStackRenderer.showTab(PerspectiveStackRenderer.java:103)
+	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer.postProcess(LazyStackRenderer.java:103)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveStackRenderer.postProcess(PerspectiveStackRenderer.java:77)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:678)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:766)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$2(PartRenderingEngine.java:737)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$7.run(PartRenderingEngine.java:731)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:715)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:69)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:185)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:674)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:766)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$2(PartRenderingEngine.java:737)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$7.run(PartRenderingEngine.java:731)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:715)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:69)
+	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer.processContents(WBWRenderer.java:663)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:674)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:766)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$2(PartRenderingEngine.java:737)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$7.run(PartRenderingEngine.java:731)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:715)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1078)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.jface 4 0 2019-06-16 19:50:23.908
+!MESSAGE /icons/full/eview16/javadoc.png
+!STACK 0
+java.io.FileNotFoundException: /icons/full/eview16/javadoc.png
+	at org.eclipse.osgi.storage.url.bundleentry.Handler.findBundleEntry(Handler.java:37)
+	at org.eclipse.osgi.storage.url.BundleResourceHandler.openConnection(BundleResourceHandler.java:169)
+	at java.net.URL.openConnection(Unknown Source)
+	at org.eclipse.core.internal.boot.PlatformURLConnection.connect(PlatformURLConnection.java:110)
+	at org.eclipse.core.internal.boot.PlatformURLConnection.getURLAsLocal(PlatformURLConnection.java:238)
+	at org.eclipse.core.internal.runtime.PlatformURLConverter.toFileURL(PlatformURLConverter.java:36)
+	at org.eclipse.core.runtime.FileLocator.toFileURL(FileLocator.java:206)
+	at org.eclipse.jface.resource.URLImageDescriptor.getFilePath(URLImageDescriptor.java:141)
+	at org.eclipse.jface.resource.URLImageDescriptor.createImage(URLImageDescriptor.java:162)
+	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:230)
+	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:208)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.getImageFromURI(SWTPartRenderer.java:223)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.getImage(SWTPartRenderer.java:235)
+	at org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer.createTab(StackRenderer.java:825)
+	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer.processContents(LazyStackRenderer.java:139)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:674)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:766)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$2(PartRenderingEngine.java:737)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$7.run(PartRenderingEngine.java:731)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:715)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:69)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:185)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:674)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:766)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$2(PartRenderingEngine.java:737)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$7.run(PartRenderingEngine.java:731)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:715)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:69)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:185)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:674)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:766)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$2(PartRenderingEngine.java:737)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$7.run(PartRenderingEngine.java:731)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:715)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:69)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveRenderer.processContents(PerspectiveRenderer.java:49)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:674)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:766)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$2(PartRenderingEngine.java:737)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$7.run(PartRenderingEngine.java:731)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:715)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveStackRenderer.showTab(PerspectiveStackRenderer.java:103)
+	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer.postProcess(LazyStackRenderer.java:103)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveStackRenderer.postProcess(PerspectiveStackRenderer.java:77)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:678)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:766)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$2(PartRenderingEngine.java:737)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$7.run(PartRenderingEngine.java:731)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:715)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:69)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:185)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:674)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:766)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$2(PartRenderingEngine.java:737)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$7.run(PartRenderingEngine.java:731)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:715)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:69)
+	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer.processContents(WBWRenderer.java:663)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:674)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:766)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$2(PartRenderingEngine.java:737)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$7.run(PartRenderingEngine.java:731)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:715)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1078)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.jface 4 0 2019-06-16 19:50:23.915
+!MESSAGE /icons/full/eview16/source.png
+!STACK 0
+java.io.FileNotFoundException: /icons/full/eview16/source.png
+	at org.eclipse.osgi.storage.url.bundleentry.Handler.findBundleEntry(Handler.java:37)
+	at org.eclipse.osgi.storage.url.BundleResourceHandler.openConnection(BundleResourceHandler.java:169)
+	at java.net.URL.openConnection(Unknown Source)
+	at org.eclipse.core.internal.boot.PlatformURLConnection.connect(PlatformURLConnection.java:110)
+	at org.eclipse.core.internal.boot.PlatformURLConnection.getURLAsLocal(PlatformURLConnection.java:238)
+	at org.eclipse.core.internal.runtime.PlatformURLConverter.toFileURL(PlatformURLConverter.java:36)
+	at org.eclipse.core.runtime.FileLocator.toFileURL(FileLocator.java:206)
+	at org.eclipse.jface.resource.URLImageDescriptor.getFilePath(URLImageDescriptor.java:141)
+	at org.eclipse.jface.resource.URLImageDescriptor.createImage(URLImageDescriptor.java:162)
+	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:230)
+	at org.eclipse.jface.resource.ImageDescriptor.createImage(ImageDescriptor.java:208)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.getImageFromURI(SWTPartRenderer.java:223)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.getImage(SWTPartRenderer.java:235)
+	at org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer.createTab(StackRenderer.java:825)
+	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer.processContents(LazyStackRenderer.java:139)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:674)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:766)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$2(PartRenderingEngine.java:737)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$7.run(PartRenderingEngine.java:731)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:715)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:69)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:185)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:674)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:766)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$2(PartRenderingEngine.java:737)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$7.run(PartRenderingEngine.java:731)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:715)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:69)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:185)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:674)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:766)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$2(PartRenderingEngine.java:737)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$7.run(PartRenderingEngine.java:731)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:715)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:69)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveRenderer.processContents(PerspectiveRenderer.java:49)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:674)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:766)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$2(PartRenderingEngine.java:737)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$7.run(PartRenderingEngine.java:731)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:715)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveStackRenderer.showTab(PerspectiveStackRenderer.java:103)
+	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer.postProcess(LazyStackRenderer.java:103)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveStackRenderer.postProcess(PerspectiveStackRenderer.java:77)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:678)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:766)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$2(PartRenderingEngine.java:737)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$7.run(PartRenderingEngine.java:731)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:715)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:69)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:185)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:674)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:766)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$2(PartRenderingEngine.java:737)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$7.run(PartRenderingEngine.java:731)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:715)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:69)
+	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer.processContents(WBWRenderer.java:663)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:674)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:766)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$2(PartRenderingEngine.java:737)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$7.run(PartRenderingEngine.java:731)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:715)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1078)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-06-16 19:50:28.049
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Abraham'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:00.688
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\plugins\javax.xml.rpc_1.1.0.v201209140446.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:00.714
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\plugins\javax.xml.soap_1.2.0.v201005080501.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:00.737
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\plugins\org.apache.ant_1.9.4.v201504302020.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:00.743
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\plugins\org.apache.axis_1.4.0.v201411182030.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:00.748
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\plugins\org.apache.commons.discovery_0.2.0.v201004190315.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:00.754
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\plugins\org.eclipse.cdt.core.win32.x86_64_5.4.0.201509131935.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:00.788
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\plugins\org.eclipse.core.runtime.compatibility.registry_3.6.0.v20150318-1505.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:00.794
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\plugins\org.eclipse.epp.package.jee_4.5.1.20150917-1200.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:00.799
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\plugins\org.eclipse.equinox.launcher.win32.win32.x86_64_1.1.300.v20150602-1417.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:00.805
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\plugins\org.eclipse.jdt.debug_3.9.0.v20150528-1838.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:00.812
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\plugins\org.eclipse.m2e.archetype.common_1.6.2.20150902-0001.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:00.829
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\plugins\org.eclipse.m2e.maven.indexer_1.6.2.20150902-0001.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:00.881
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\plugins\org.eclipse.m2e.maven.runtime.slf4j.simple_1.6.2.20150902-0001.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:00.950
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\plugins\org.eclipse.m2e.maven.runtime_1.6.2.20150902-0001.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:01.091
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\plugins\org.eclipse.pde.build_3.9.100.v20150521-1524.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:01.097
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\plugins\org.eclipse.platform_4.5.1.v20150904-0015.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:01.102
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\plugins\org.eclipse.ui.themes_1.1.0.v20150511-0913.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:01.108
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\plugins\org.junit_4.12.0.v201504281640.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:01.251
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.datatools.common.doc.user_1.12.0.v201405281819-26-311A16321A3557.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:01.256
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.datatools.connectivity.doc.user_1.12.0.v201405281819-37D-7733L3D753L7BBF.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:01.261
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.datatools.connectivity.feature_1.12.0.v201406061321-7C7n9DEsxcwtN5odeWrQrgwYHq8.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:01.267
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.datatools.connectivity.oda.designer.core.feature_1.12.0.v201406061321-787B7PBgJ9DUBNCVAaSZ.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:01.272
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.datatools.connectivity.oda.designer.feature_1.12.0.v201406061321-4147w312514242925.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:01.277
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.datatools.connectivity.oda.feature_1.12.0.v201406061321-7E7C7YBgJ9ET9OHLDfLZ.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:01.283
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.datatools.doc.user_1.12.0.v201405281819-47C18w95FHAM87EJJD7.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:01.288
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.datatools.enablement.apache.derby.feature_1.12.0.v201406061321-777B8gBmKFQ3NjRaMjbx8GDI.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:01.294
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.datatools.enablement.feature_1.12.0.v201406061321-7J9t0B_0haN-EchrvGIyEh2M8j8a.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:01.300
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.datatools.enablement.hsqldb.feature_1.12.0.v201406061321-67G0AqGDM7KfNWJjJS8GDI.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:01.305
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.datatools.enablement.ibm.feature_1.12.0.v201406061321-7G-7cFD3wThz-VTq2cpq3.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:01.310
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.datatools.enablement.ingres.feature_1.12.0.v201406061321-540AkF78Z7UCRAQDB.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:01.316
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.datatools.enablement.jdbc.feature_1.12.0.v201406061321-4-49oB58B7DAF7FCH.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:01.322
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.datatools.enablement.jdt.feature_1.12.0.v201406061321-2-07w312218332612.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:01.328
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.datatools.enablement.msft.feature_1.12.0.v201406061321-5478AkF7AO7UBQAK8M.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:01.333
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.datatools.enablement.mysql.feature_1.12.0.v201406061321-5478AkF7AK8X9JCREG.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:01.339
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.datatools.enablement.oda.designer.feature_1.12.0.v201406061321-647L9oB58H5E8E8TBK.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:01.347
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.datatools.enablement.oda.feature_1.12.0.v201406061321-7D7U7OEVVFNSGfJoIz0Of.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:01.352
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.datatools.enablement.oracle.feature_1.12.0.v201406061321-548fAkF7AL7RBJANAI.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:01.357
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.datatools.enablement.postgresql.feature_1.12.0.v201406061321-553AkF7AK8PCRBQBP.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:01.363
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.datatools.enablement.sap.feature_1.12.0.v201406061321-540AkF7AJ7YEJBU7S.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:01.368
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.datatools.enablement.sqlite.feature_1.12.0.v201406061321-542AkF7AJ7SAKAPBF.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:01.375
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.datatools.enablement.sybase.feature_1.12.0.v201406061321-7E478F9NiNc2S7fxRCTD.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:01.393
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.datatools.intro_1.12.0.v201405281819-26-7w312116392911.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:01.406
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.datatools.modelbase.feature_1.12.0.v201406061321-7707GCcNBHLDaKTEcRi.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:01.415
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.datatools.sqldevtools.data.feature_1.12.0.v201406061321-647ABgJ9EKDJDNAdHO.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:01.424
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.datatools.sqldevtools.ddl.feature_1.12.0.v201406061321-27B-78B08EG8S_IRVNeUiL6au.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:01.460
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.datatools.sqldevtools.ddlgen.feature_1.12.0.v201406061321-7A-7DF7RZHQUMdThK5_t.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:01.467
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.datatools.sqldevtools.feature_1.12.0.v201406061321-7N8P7IFDri6qjCyg6Q61VhVsihvO.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:01.475
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.datatools.sqldevtools.parsers.feature_1.12.0.v201406061321-623BgJ9EE9ZJRDZLA.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:01.482
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.datatools.sqldevtools.results.feature_1.12.0.v201406061321-427H9oB58F6A8I5KGJ.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:01.487
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.datatools.sqldevtools.schemaobjecteditor.feature_1.12.0.v201406061321-4218375LG5BJ93413.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:01.493
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.datatools.sqldevtools.sqlbuilder.feature_1.12.0.v201406061321-79-7FEVVFNSI_QiI-Sd.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:01.500
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.datatools.sqltools.doc.user_1.12.0.v201405281819-37D-7733L3D753L7BBF.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:01.506
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.draw2d_3.10.1.201508170204.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:01.513
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.e4.rcp_1.4.0.v20150903-1804.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:01.518
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.ecf.core.feature_1.1.0.v20150810-1719.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:01.524
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.ecf.core.ssl.feature_1.0.0.v20150810-1719.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:01.531
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.ecf.filetransfer.feature_3.10.1.v20150810-1719.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:01.536
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.ecf.filetransfer.httpclient4.feature_3.10.1.v20150810-1719.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:01.542
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.ecf.filetransfer.httpclient4.ssl.feature_1.0.0.v20150810-1719.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:01.548
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.ecf.filetransfer.ssl.feature_1.0.0.v20150810-1719.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:01.554
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.egit.mylyn_4.0.3.201509231615-r.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:01.560
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.egit_4.0.3.201509231615-r.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:01.566
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.emf.codegen.ecore.ui_2.11.1.v20150806-0404.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:01.571
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.emf.codegen.ecore_2.11.0.v20150806-0404.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:01.578
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.emf.codegen.ui_2.8.0.v20150806-0404.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:01.583
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.emf.codegen_2.11.0.v20150806-0404.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:01.589
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.emf.common.ui_2.10.0.v20150806-0404.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:01.598
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.emf.common_2.11.0.v20150805-0538.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:01.603
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.emf.converter_2.11.0.v20150806-0404.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:01.612
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.emf.databinding.edit_1.4.0.v20150806-0404.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:01.618
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.emf.databinding_1.4.0.v20150806-0404.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:01.624
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.emf.ecore.editor_2.11.0.v20150806-0404.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:01.632
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.emf.ecore.edit_2.9.0.v20150806-0404.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:01.638
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.emf.ecore_2.11.1.v20150805-0538.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:01.645
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.emf.edit.ui_2.11.0.v20150806-0404.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:01.651
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.emf.edit_2.11.1.v20150806-0404.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:01.657
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.emf.mapping.ecore.editor_2.10.0.v20150806-0404.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:01.663
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.emf.mapping.ecore_2.9.0.v20150806-0404.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:01.669
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.emf.mapping.ui_2.9.0.v20150806-0404.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:01.674
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.emf.mapping_2.9.0.v20150806-0404.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:01.681
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.emf_2.11.1.v20150806-0404.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:01.686
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.epp.logging.aeri.feature_1.0.1.v20150913-0716.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:01.695
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.epp.mpc_1.4.1.v20150916-1928.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:01.701
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.epp.package.common.feature_4.5.1.20150917-1200.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:01.708
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.epp.package.jee.feature_4.5.1.20150917-1200.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:01.718
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.equinox.p2.core.feature_1.3.100.v20150527-1706.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:01.726
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.equinox.p2.discovery.feature_1.0.300.v20150430-1836.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:01.732
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.equinox.p2.extras.feature_1.2.100.v20150601-1708.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:01.738
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.equinox.p2.rcp.feature_1.2.101.v20150826-1318.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:01.746
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.equinox.p2.user.ui_2.2.101.v20150826-1318.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:01.751
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.gef_3.10.1.201508170204.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:01.756
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.help_2.1.1.v20150904-0015.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:01.762
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.jdt_3.11.1.v20150904-0015.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:01.767
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.jgit_4.0.3.201509231615-r.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:01.773
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.jpt.common.eclipselink.feature_1.3.101.v201410241959.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:01.794
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.jpt.common.feature_1.4.1.v201410241959.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:01.800
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.jpt.dbws.eclipselink.feature_1.2.101.v201501152048.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:01.805
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.jpt.jaxb.eclipselink.feature_1.4.102.v201501171820.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:01.811
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.jpt.jaxb.feature_1.5.2.v201501171820.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:01.816
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.jpt.jpa.eclipselink.feature_3.4.1.v201409111648.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:01.856
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.jpt.jpa.feature_3.4.2.v201505291546.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:01.862
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.jsf.feature_3.8.0.v201505112336.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:01.867
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.jst.common.fproj.enablement.jdt_3.6.3.v201501141810.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:01.872
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.jst.enterprise_core.feature_3.6.0.v201405070205.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:01.878
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.jst.enterprise_ui.feature_3.7.0.v201505131719.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:01.883
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.jst.enterprise_userdoc.feature_3.6.0.v201405070205.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:01.888
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.jst.jsf.apache.trinidad.tagsupport.feature_2.6.0.v201410101748.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:01.893
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.jst.server_adapters.ext.feature_3.3.401.v201508232356.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:01.909
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.jst.server_adapters.feature_3.2.400.v201503102136.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:01.915
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.jst.server_core.feature_3.4.200.v201503102136.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:01.920
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.jst.server_ui.feature_3.4.200.v201503102136.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:01.927
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.jst.server_userdoc.feature_3.3.300.v201503102136.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:01.960
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.jst.webpageeditor.feature_2.7.1.v201508270443.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:01.966
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.jst.web_core.feature_3.7.1.v201509021802.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:01.986
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.jst.web_ui.feature_3.7.1.v201509021802.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:01.991
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.jst.web_userdoc.feature_3.6.0.v201405070205.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:01.996
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.jst.ws.axis2tools.feature_1.1.301.v201410160332.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:02.002
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.jst.ws.cxf.feature_1.1.203.v201503151903.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:02.017
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.jst.ws.jaxws.dom.feature_1.0.302.v201504272154.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:02.024
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.jst.ws.jaxws.feature_1.2.202.v201504291921.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:02.030
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.jst.ws.jaxws_userdoc.feature_1.0.402.v201503151903.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:02.036
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.m2e.feature_1.6.2.20150902-0002.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:02.043
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.m2e.logback.feature_1.6.2.20150902-0002.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:02.049
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.m2e.wtp.feature_1.2.1.20150819-2220.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:02.054
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.m2e.wtp.jaxrs.feature_1.2.1.20150819-2220.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:02.059
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.m2e.wtp.jpa.feature_1.2.1.20150819-2224.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:02.064
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.m2e.wtp.jsf.feature_1.2.1.20150819-2220.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:02.069
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.mylyn.bugzilla_feature_3.17.0.v20150828-2026.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:02.076
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.mylyn.commons.identity_1.9.0.v20150828-2041.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:02.083
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.mylyn.commons.notifications_1.9.0.v20150828-2041.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:02.089
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.mylyn.commons.repositories_1.9.0.v20150625-2042.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:02.099
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.mylyn.commons_3.17.0.v20150828-2041.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:02.106
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.mylyn.context_feature_3.17.0.v20150625-2044.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:02.114
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.mylyn.discovery_3.17.0.v20150828-2041.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:02.121
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.mylyn.ide_feature_3.17.0.v20150625-2044.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:02.129
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.mylyn.java_feature_3.17.0.v20150828-2014.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:02.134
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.mylyn.monitor_3.17.0.v20150828-2041.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:02.140
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.mylyn.tasks.ide_3.17.0.v20150828-1845.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:02.147
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.mylyn.team_feature_3.17.0.v20150625-2044.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:02.176
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.mylyn.wikitext_feature_2.6.0.v20150901-2143.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:02.183
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.mylyn_feature_3.17.0.v20150909-1822.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:02.188
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.oomph.p2_1.2.0.v20150915-0926.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:02.193
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.oomph.setup.core_1.2.0.v20150915-0926.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:02.198
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.oomph.setup_1.2.0.v20150915-0926.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:02.203
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.pde_3.11.1.v20150904-0345.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:02.208
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.platform_4.5.1.v20150904-0015.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:02.214
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.rcp_4.5.1.v20150904-0015.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:02.219
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.recommenders.mylyn.rcp.feature_2.2.4.v20150914-0857.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:02.225
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.recommenders.rcp.feature_2.2.4.v20150914-0857.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:02.232
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.rse.core_3.7.0.201505221634.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:02.239
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.rse.dstore_3.7.0.201505221634.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:02.275
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.rse.ftp_3.7.0.201505221634.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:02.283
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.rse.local_3.7.0.201505221634.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:02.289
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.rse.ssh_3.7.0.201505221634.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:02.300
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.rse.telnet_3.7.0.201505221634.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:02.307
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.rse.useractions_3.7.0.201505221634.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:02.314
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.rse_3.7.0.201505221634.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:02.321
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.tm.terminal.connector.local.feature_4.0.0.201506040610.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:02.329
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.tm.terminal.connector.serial.feature_4.0.0.201506040610.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:02.336
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.tm.terminal.connector.ssh.feature_4.0.0.201506040610.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:02.343
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.tm.terminal.connector.telnet.feature_4.0.0.201506040610.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:02.351
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.tm.terminal.control.feature_4.0.0.201506040610.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:02.360
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.tm.terminal.feature_4.0.0.201506040610.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:02.367
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.tm.terminal.view.feature_4.0.0.201506040610.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:02.375
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.wst.common.fproj_3.7.0.v201505072140.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:02.384
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.wst.common_core.feature_3.7.1.v201508262220.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:02.449
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.wst.common_ui.feature_3.7.1.v201508262220.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:02.454
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.wst.jsdt.feature_1.6.201.v201508262249.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:02.459
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.wst.server_adapters.feature_3.2.402.v201505042029.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:02.464
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.wst.server_core.feature_3.3.600.v201508271522.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:02.538
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.wst.server_ui.feature_3.3.600.v201509022125.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:02.556
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.wst.server_userdoc.feature_3.3.300.v201405011426.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:02.562
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.wst.web_core.feature_3.7.1.v201508271605.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:02.569
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.wst.web_ui.feature_3.7.1.v201509022125.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:02.578
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.wst.web_userdoc.feature_3.6.0.v201405062147.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:02.585
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.wst.ws_core.feature_3.7.0.v201505131719.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:02.591
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.wst.ws_ui.feature_3.7.1.v201508271926.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:02.597
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.wst.ws_userdoc.feature_3.1.400.v201405061938.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:02.603
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.wst.ws_wsdl15.feature_1.5.400.v201405061938.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:02.609
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.wst.xml.xpath2.processor.feature_2.0.301.v201409111854.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:02.615
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.wst.xml_core.feature_3.7.0.v201502261749.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:02.620
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.wst.xml_ui.feature_3.7.1.v201508271605.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:02.626
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.wst.xsl.feature_1.3.401.v201409111855.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:02.642
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.sonatype.m2e.mavenarchiver.feature_0.17.0.201502101659-signed-20150525172209.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:02.760
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\plugins\javax.xml.rpc_1.1.0.v201209140446.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:02.765
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\plugins\javax.xml.soap_1.2.0.v201005080501.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:02.770
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\plugins\org.apache.ant_1.9.4.v201504302020.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:02.775
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\plugins\org.apache.axis_1.4.0.v201411182030.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:02.780
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\plugins\org.apache.commons.discovery_0.2.0.v201004190315.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:02.786
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\plugins\org.eclipse.cdt.core.win32.x86_64_5.4.0.201509131935.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:02.791
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\plugins\org.eclipse.core.runtime.compatibility.registry_3.6.0.v20150318-1505.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:02.796
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\plugins\org.eclipse.epp.package.jee_4.5.1.20150917-1200.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:02.802
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\plugins\org.eclipse.equinox.launcher.win32.win32.x86_64_1.1.300.v20150602-1417.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:02.808
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\plugins\org.eclipse.jdt.debug_3.9.0.v20150528-1838.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:02.813
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\plugins\org.eclipse.m2e.archetype.common_1.6.2.20150902-0001.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:02.818
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\plugins\org.eclipse.m2e.maven.indexer_1.6.2.20150902-0001.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:02.824
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\plugins\org.eclipse.m2e.maven.runtime.slf4j.simple_1.6.2.20150902-0001.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:02.829
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\plugins\org.eclipse.m2e.maven.runtime_1.6.2.20150902-0001.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:02.834
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\plugins\org.eclipse.pde.build_3.9.100.v20150521-1524.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:02.839
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\plugins\org.eclipse.platform_4.5.1.v20150904-0015.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:02.845
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\plugins\org.eclipse.ui.themes_1.1.0.v20150511-0913.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:02.851
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\plugins\org.junit_4.12.0.v201504281640.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:02.857
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.datatools.common.doc.user_1.12.0.v201405281819-26-311A16321A3557.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:02.862
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.datatools.connectivity.doc.user_1.12.0.v201405281819-37D-7733L3D753L7BBF.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:02.867
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.datatools.connectivity.feature_1.12.0.v201406061321-7C7n9DEsxcwtN5odeWrQrgwYHq8.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:02.872
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.datatools.connectivity.oda.designer.core.feature_1.12.0.v201406061321-787B7PBgJ9DUBNCVAaSZ.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:02.879
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.datatools.connectivity.oda.designer.feature_1.12.0.v201406061321-4147w312514242925.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:02.887
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.datatools.connectivity.oda.feature_1.12.0.v201406061321-7E7C7YBgJ9ET9OHLDfLZ.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:02.895
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.datatools.doc.user_1.12.0.v201405281819-47C18w95FHAM87EJJD7.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:02.900
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.datatools.enablement.apache.derby.feature_1.12.0.v201406061321-777B8gBmKFQ3NjRaMjbx8GDI.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:02.905
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.datatools.enablement.feature_1.12.0.v201406061321-7J9t0B_0haN-EchrvGIyEh2M8j8a.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:02.911
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.datatools.enablement.hsqldb.feature_1.12.0.v201406061321-67G0AqGDM7KfNWJjJS8GDI.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:02.916
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.datatools.enablement.ibm.feature_1.12.0.v201406061321-7G-7cFD3wThz-VTq2cpq3.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:02.921
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.datatools.enablement.ingres.feature_1.12.0.v201406061321-540AkF78Z7UCRAQDB.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:02.926
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.datatools.enablement.jdbc.feature_1.12.0.v201406061321-4-49oB58B7DAF7FCH.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:02.932
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.datatools.enablement.jdt.feature_1.12.0.v201406061321-2-07w312218332612.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:02.938
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.datatools.enablement.msft.feature_1.12.0.v201406061321-5478AkF7AO7UBQAK8M.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:02.943
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.datatools.enablement.mysql.feature_1.12.0.v201406061321-5478AkF7AK8X9JCREG.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:02.949
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.datatools.enablement.oda.designer.feature_1.12.0.v201406061321-647L9oB58H5E8E8TBK.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:02.954
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.datatools.enablement.oda.feature_1.12.0.v201406061321-7D7U7OEVVFNSGfJoIz0Of.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:02.961
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.datatools.enablement.oracle.feature_1.12.0.v201406061321-548fAkF7AL7RBJANAI.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:02.968
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.datatools.enablement.postgresql.feature_1.12.0.v201406061321-553AkF7AK8PCRBQBP.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:02.976
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.datatools.enablement.sap.feature_1.12.0.v201406061321-540AkF7AJ7YEJBU7S.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:02.983
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.datatools.enablement.sqlite.feature_1.12.0.v201406061321-542AkF7AJ7SAKAPBF.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:02.992
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.datatools.enablement.sybase.feature_1.12.0.v201406061321-7E478F9NiNc2S7fxRCTD.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:02.999
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.datatools.intro_1.12.0.v201405281819-26-7w312116392911.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.004
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.datatools.modelbase.feature_1.12.0.v201406061321-7707GCcNBHLDaKTEcRi.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.011
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.datatools.sqldevtools.data.feature_1.12.0.v201406061321-647ABgJ9EKDJDNAdHO.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.016
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.datatools.sqldevtools.ddl.feature_1.12.0.v201406061321-27B-78B08EG8S_IRVNeUiL6au.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.022
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.datatools.sqldevtools.ddlgen.feature_1.12.0.v201406061321-7A-7DF7RZHQUMdThK5_t.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.028
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.datatools.sqldevtools.feature_1.12.0.v201406061321-7N8P7IFDri6qjCyg6Q61VhVsihvO.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.033
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.datatools.sqldevtools.parsers.feature_1.12.0.v201406061321-623BgJ9EE9ZJRDZLA.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.040
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.datatools.sqldevtools.results.feature_1.12.0.v201406061321-427H9oB58F6A8I5KGJ.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.046
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.datatools.sqldevtools.schemaobjecteditor.feature_1.12.0.v201406061321-4218375LG5BJ93413.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.053
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.datatools.sqldevtools.sqlbuilder.feature_1.12.0.v201406061321-79-7FEVVFNSI_QiI-Sd.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.060
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.datatools.sqltools.doc.user_1.12.0.v201405281819-37D-7733L3D753L7BBF.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.065
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.draw2d_3.10.1.201508170204.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.070
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.e4.rcp_1.4.0.v20150903-1804.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.075
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.ecf.core.feature_1.1.0.v20150810-1719.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.080
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.ecf.core.ssl.feature_1.0.0.v20150810-1719.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.086
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.ecf.filetransfer.feature_3.10.1.v20150810-1719.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.091
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.ecf.filetransfer.httpclient4.feature_3.10.1.v20150810-1719.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.097
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.ecf.filetransfer.httpclient4.ssl.feature_1.0.0.v20150810-1719.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.102
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.ecf.filetransfer.ssl.feature_1.0.0.v20150810-1719.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.107
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.egit.mylyn_4.0.3.201509231615-r.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.112
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.egit_4.0.3.201509231615-r.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.118
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.emf.codegen.ecore.ui_2.11.1.v20150806-0404.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.123
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.emf.codegen.ecore_2.11.0.v20150806-0404.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.128
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.emf.codegen.ui_2.8.0.v20150806-0404.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.134
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.emf.codegen_2.11.0.v20150806-0404.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.140
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.emf.common.ui_2.10.0.v20150806-0404.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.146
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.emf.common_2.11.0.v20150805-0538.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.152
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.emf.converter_2.11.0.v20150806-0404.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.157
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.emf.databinding.edit_1.4.0.v20150806-0404.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.163
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.emf.databinding_1.4.0.v20150806-0404.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.168
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.emf.ecore.editor_2.11.0.v20150806-0404.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.173
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.emf.ecore.edit_2.9.0.v20150806-0404.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.178
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.emf.ecore_2.11.1.v20150805-0538.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.183
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.emf.edit.ui_2.11.0.v20150806-0404.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.188
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.emf.edit_2.11.1.v20150806-0404.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.193
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.emf.mapping.ecore.editor_2.10.0.v20150806-0404.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.198
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.emf.mapping.ecore_2.9.0.v20150806-0404.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.203
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.emf.mapping.ui_2.9.0.v20150806-0404.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.210
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.emf.mapping_2.9.0.v20150806-0404.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.215
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.emf_2.11.1.v20150806-0404.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.220
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.epp.logging.aeri.feature_1.0.1.v20150913-0716.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.225
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.epp.mpc_1.4.1.v20150916-1928.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.232
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.epp.package.common.feature_4.5.1.20150917-1200.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.240
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.epp.package.jee.feature_4.5.1.20150917-1200.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.247
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.equinox.p2.core.feature_1.3.100.v20150527-1706.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.252
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.equinox.p2.discovery.feature_1.0.300.v20150430-1836.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.258
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.equinox.p2.extras.feature_1.2.100.v20150601-1708.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.263
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.equinox.p2.rcp.feature_1.2.101.v20150826-1318.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.268
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.equinox.p2.user.ui_2.2.101.v20150826-1318.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.273
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.gef_3.10.1.201508170204.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.279
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.help_2.1.1.v20150904-0015.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.284
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.jdt_3.11.1.v20150904-0015.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.290
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.jgit_4.0.3.201509231615-r.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.296
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.jpt.common.eclipselink.feature_1.3.101.v201410241959.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.301
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.jpt.common.feature_1.4.1.v201410241959.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.306
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.jpt.dbws.eclipselink.feature_1.2.101.v201501152048.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.312
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.jpt.jaxb.eclipselink.feature_1.4.102.v201501171820.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.317
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.jpt.jaxb.feature_1.5.2.v201501171820.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.323
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.jpt.jpa.eclipselink.feature_3.4.1.v201409111648.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.328
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.jpt.jpa.feature_3.4.2.v201505291546.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.333
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.jsf.feature_3.8.0.v201505112336.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.339
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.jst.common.fproj.enablement.jdt_3.6.3.v201501141810.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.344
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.jst.enterprise_core.feature_3.6.0.v201405070205.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.349
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.jst.enterprise_ui.feature_3.7.0.v201505131719.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.355
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.jst.enterprise_userdoc.feature_3.6.0.v201405070205.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.360
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.jst.jsf.apache.trinidad.tagsupport.feature_2.6.0.v201410101748.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.366
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.jst.server_adapters.ext.feature_3.3.401.v201508232356.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.371
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.jst.server_adapters.feature_3.2.400.v201503102136.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.377
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.jst.server_core.feature_3.4.200.v201503102136.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.417
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.jst.server_ui.feature_3.4.200.v201503102136.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.423
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.jst.server_userdoc.feature_3.3.300.v201503102136.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.428
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.jst.webpageeditor.feature_2.7.1.v201508270443.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.434
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.jst.web_core.feature_3.7.1.v201509021802.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.439
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.jst.web_ui.feature_3.7.1.v201509021802.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.444
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.jst.web_userdoc.feature_3.6.0.v201405070205.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.449
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.jst.ws.axis2tools.feature_1.1.301.v201410160332.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.454
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.jst.ws.cxf.feature_1.1.203.v201503151903.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.460
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.jst.ws.jaxws.dom.feature_1.0.302.v201504272154.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.465
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.jst.ws.jaxws.feature_1.2.202.v201504291921.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.470
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.jst.ws.jaxws_userdoc.feature_1.0.402.v201503151903.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.476
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.m2e.feature_1.6.2.20150902-0002.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.481
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.m2e.logback.feature_1.6.2.20150902-0002.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.486
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.m2e.wtp.feature_1.2.1.20150819-2220.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.492
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.m2e.wtp.jaxrs.feature_1.2.1.20150819-2220.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.497
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.m2e.wtp.jpa.feature_1.2.1.20150819-2224.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.503
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.m2e.wtp.jsf.feature_1.2.1.20150819-2220.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.508
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.mylyn.bugzilla_feature_3.17.0.v20150828-2026.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.513
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.mylyn.commons.identity_1.9.0.v20150828-2041.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.520
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.mylyn.commons.notifications_1.9.0.v20150828-2041.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.525
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.mylyn.commons.repositories_1.9.0.v20150625-2042.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.531
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.mylyn.commons_3.17.0.v20150828-2041.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.536
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.mylyn.context_feature_3.17.0.v20150625-2044.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.541
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.mylyn.discovery_3.17.0.v20150828-2041.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.547
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.mylyn.ide_feature_3.17.0.v20150625-2044.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.553
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.mylyn.java_feature_3.17.0.v20150828-2014.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.558
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.mylyn.monitor_3.17.0.v20150828-2041.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.564
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.mylyn.tasks.ide_3.17.0.v20150828-1845.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.569
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.mylyn.team_feature_3.17.0.v20150625-2044.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.576
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.mylyn.wikitext_feature_2.6.0.v20150901-2143.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.581
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.mylyn_feature_3.17.0.v20150909-1822.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.586
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.oomph.p2_1.2.0.v20150915-0926.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.591
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.oomph.setup.core_1.2.0.v20150915-0926.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.597
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.oomph.setup_1.2.0.v20150915-0926.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.602
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.pde_3.11.1.v20150904-0345.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.608
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.platform_4.5.1.v20150904-0015.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.614
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.rcp_4.5.1.v20150904-0015.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.619
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.recommenders.mylyn.rcp.feature_2.2.4.v20150914-0857.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.624
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.recommenders.rcp.feature_2.2.4.v20150914-0857.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.629
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.rse.core_3.7.0.201505221634.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.635
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.rse.dstore_3.7.0.201505221634.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.640
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.rse.ftp_3.7.0.201505221634.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.646
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.rse.local_3.7.0.201505221634.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.651
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.rse.ssh_3.7.0.201505221634.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.656
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.rse.telnet_3.7.0.201505221634.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.662
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.rse.useractions_3.7.0.201505221634.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.667
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.rse_3.7.0.201505221634.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.673
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.tm.terminal.connector.local.feature_4.0.0.201506040610.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.678
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.tm.terminal.connector.serial.feature_4.0.0.201506040610.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.684
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.tm.terminal.connector.ssh.feature_4.0.0.201506040610.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.689
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.tm.terminal.connector.telnet.feature_4.0.0.201506040610.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.695
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.tm.terminal.control.feature_4.0.0.201506040610.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.700
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.tm.terminal.feature_4.0.0.201506040610.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.705
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.tm.terminal.view.feature_4.0.0.201506040610.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.711
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.wst.common.fproj_3.7.0.v201505072140.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.717
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.wst.common_core.feature_3.7.1.v201508262220.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.722
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.wst.common_ui.feature_3.7.1.v201508262220.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.728
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.wst.jsdt.feature_1.6.201.v201508262249.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.733
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.wst.server_adapters.feature_3.2.402.v201505042029.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.738
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.wst.server_core.feature_3.3.600.v201508271522.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.744
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.wst.server_ui.feature_3.3.600.v201509022125.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.750
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.wst.server_userdoc.feature_3.3.300.v201405011426.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.755
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.wst.web_core.feature_3.7.1.v201508271605.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.760
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.wst.web_ui.feature_3.7.1.v201509022125.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.767
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.wst.web_userdoc.feature_3.6.0.v201405062147.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.772
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.wst.ws_core.feature_3.7.0.v201505131719.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.777
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.wst.ws_ui.feature_3.7.1.v201508271926.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.783
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.wst.ws_userdoc.feature_3.1.400.v201405061938.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.788
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.wst.ws_wsdl15.feature_1.5.400.v201405061938.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.793
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.wst.xml.xpath2.processor.feature_2.0.301.v201409111854.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.798
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.wst.xml_core.feature_3.7.0.v201502261749.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.803
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.wst.xml_ui.feature_3.7.1.v201508271605.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.808
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.eclipse.wst.xsl.feature_1.3.401.v201409111855.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-06-16 19:51:03.814
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\Users\Abraham\Desktop\desktop cleanup\old\eclipse\features\org.sonatype.m2e.mavenarchiver.feature_0.17.0.201502101659-signed-20150525172209.
